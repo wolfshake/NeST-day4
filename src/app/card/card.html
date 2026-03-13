@@ -4,6 +4,6 @@
     <h5 class="card-title">{{ product.title }}</h5>
     <p class="card-text flex-grow-1">{{ product.description }}</p>
     <p class="card-text">at just ${{ product.price }}rs</p>
-    <a routerLink="contact" class="btn btn-primary">Grab Now</a>
+    <button class="btn btn-success" [routerLink]="['/product/productdetails', product.id]">Grab Now</button>
   </div>
 </div>
